@@ -1,0 +1,34 @@
+<html>
+
+<head>
+<style>
+h1 {
+  color: black;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+    <div><h1>Video in div</h1></div>
+    <div>Playsinline OFF</h1></div>
+    <div class="video-container">
+        <video muted autoplay  loop id="bgvid" class='fillWidth'>
+           
+            <source src="file.mp4" type="video/mp4" />
+
+            Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+
+    </div>
+    <div><h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quidem eligendi voluptas culpa quo, optio rem inventore porro id numquam ea nobis earum maxime aliquid deserunt. Nesciunt odit non velit?</h1></div>
+    <div>Playsinline On</h1></div>
+    <div class="video-container">
+        <video muted autoplay   playsinline loop id="bgvid" class='fillWidth'>
+           
+            <source src="file.mp4" type="video/mp4" />
+
+            Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+</body>
+</html>
