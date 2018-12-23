@@ -1,37 +1,44 @@
 <html>
 
 <head>
-<style>
-h1 {
+    <style>
+        h1 {
   color: black;
   text-align: left;
 }
 .video-container
 {
-
+    text-align: left;
 }
 </style>
 </head>
 
 <body>
-    <div><h1>Playsinline dans balise video</h1></div>
-    <div><h1>Si Playsinline absent --> pas de lancement auto sous IOS</h1></div>
+    <div>
+        <h1>Playsinline dans balise video</h1>
+    </div>
+    <div>
+        <h1>Si Playsinline absent --> pas de lancement auto sous IOS</h1>
+    </div>
     <div class="video-container" class="center-div">
-        <video muted autoplay  loop id="bgvid" class='fillWidth'>
-           
+        <video controls muted autoplay loop id="bgvid" class='fillWidth'>
+
             <source src="file.mp4" type="video/mp4" />
 
             Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
 
     </div>
-       <div><h1>Si Playsinline present --> lancement auto sous IOS</h1></div>
+    <div>
+        <h1>Si Playsinline present --> lancement auto sous IOS</h1>
+    </div>
     <div center class="video-container">
-        <video muted autoplay   playsinline loop id="bgvid" class='fillWidth'>
-           
+        <video controls muted autoplay playsinline loop id="bgvid" class='fillWidth'>
+
             <source src="file.mp4" type="video/mp4" />
 
             Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
 </body>
+
 </html>
