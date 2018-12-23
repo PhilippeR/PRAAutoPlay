@@ -4,22 +4,18 @@
 <style>
 h1 {
   color: black;
-  text-align: center;
+  text-align: left;
 }
-.center-div
+.video-container
 {
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
-  background-color: #ccc;
-  border-radius: 3px;
+
 }
 </style>
 </head>
 
 <body>
-    <div><h1>Video in div</h1></div>
-    <div><h1>Si Playsinline  OFF, pas de lancement auto sous IOS</h1></div>
+    <div><h1>Playsinline dans balise video</h1></div>
+    <div><h1>Si Playsinline absent --> pas de lancement auto sous IOS</h1></div>
     <div class="video-container" class="center-div">
         <video muted autoplay  loop id="bgvid" class='fillWidth'>
            
@@ -29,7 +25,7 @@ h1 {
         </video>
 
     </div>
-       <div><h1>Si Playsinline On, lancement auto sous IOS</h1></div>
+       <div><h1>Si Playsinline present --> lancement auto sous IOS</h1></div>
     <div center class="video-container">
         <video muted autoplay   playsinline loop id="bgvid" class='fillWidth'>
            
