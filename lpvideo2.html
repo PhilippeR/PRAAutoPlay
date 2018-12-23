@@ -6,13 +6,21 @@ h1 {
   color: black;
   text-align: center;
 }
+.center-div
+{
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 3px;
+}
 </style>
 </head>
 
 <body>
     <div><h1>Video in div</h1></div>
-    <div>Playsinline OFF</h1></div>
-    <div class="video-container">
+    <div><h1>Si Playsinline  OFF, pas de lancement auto sous IOS</h1></div>
+    <div class="video-container" class="center-div">
         <video muted autoplay  loop id="bgvid" class='fillWidth'>
            
             <source src="file.mp4" type="video/mp4" />
@@ -21,9 +29,8 @@ h1 {
         </video>
 
     </div>
-    <div><h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quidem eligendi voluptas culpa quo, optio rem inventore porro id numquam ea nobis earum maxime aliquid deserunt. Nesciunt odit non velit?</h1></div>
-    <div>Playsinline On</h1></div>
-    <div class="video-container">
+       <div><h1>Si Playsinline On, lancement auto sous IOS</h1></div>
+    <div center class="video-container">
         <video muted autoplay   playsinline loop id="bgvid" class='fillWidth'>
            
             <source src="file.mp4" type="video/mp4" />
