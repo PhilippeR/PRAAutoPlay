@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <video id="my-video" class="video-js" controls data-setup='{"loop": "true"}'>
+  <video id="my-video" class="video-js" controls  data-setup='{"loop": "true","autoplay": "true"}'>
     <source src="file.mp4" type='video/mp4'>
     <p class="vjs-no-js">
       To view this video please enable JavaScript, and consider upgrading to a web browser that
@@ -18,11 +18,21 @@
     </p>
   </video>
   <script src="https://vjs.zencdn.net/7.3.0/video.js"></script>
-  <script>
-    videojs('my-video').ready(function () {
+
+
+
+  <video id="my-video2" class="video-js" controls  data-setup='{"loop": "true"}'>
+    <source src="file.mp4" type='video/mp4'>
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
+  <script src="https://vjs.zencdn.net/7.3.0/video.js"></script>
+   <script>
+    videojs('my-video2').ready(function () {
       this.play();
     });
-  </script>
-</body>
+  </script> </body>
 
 </html>
