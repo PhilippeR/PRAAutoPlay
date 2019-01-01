@@ -1,8 +1,8 @@
 <html>
 
 <head>
-    <style>
-        h1 {
+<style>
+h1 {
   color: black;
   text-align: left;
 }
@@ -11,6 +11,8 @@
     text-align: left;
 }
 </style>
+  <title>HLS Native</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -22,7 +24,7 @@
         <h2>without playsinline</h2>
     </div>
     <div class="video-container" class="center-div">
-        <video controls muted autoplay loop id="bgvid" class='fillWidth'>
+        <video controls muted autoplay height="268">
             <source src="https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8" type="application/x-mpegURL">
             Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
@@ -31,7 +33,7 @@
         <h2>with playsinline</h2>
     </div>
     <div center class="video-container">
-        <video controls muted autoplay playsinline loop id="bgvid" class='fillWidth'>
+        <video controls muted autoplay playsinline loop height="268">
             <source src="https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8" type="application/x-mpegURL">
             Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
