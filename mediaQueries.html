@@ -29,23 +29,26 @@ h1
 }
 
 </style>
-<title>MP4_and_native_video_tag</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tests Media Queries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <div>
         <h1>Test medias queries </h1>
     </div>
+    <button onclick="windowSize()">Window Size</button>
+    <p id="demo"></p>
+
     <div>
         <h1>
             source src="360p.mp4" type="video/mp4" media="screen and (max-width: 1280px)" <br>
-            source src="file.mp4" type="video/mp4" media="screen and (min-width: 1280px)" 
+            source src="file.mp4" type="video/mp4" media="screen and (min-width: 1280px)"
 
         </h1>
     </div>
-    <div class="video-container" >
-        <video controls muted autoplay loop >
+    <div class="video-container">
+        <video controls muted autoplay loop>
             <source src="360p.mp4" type="video/mp4" media="screen and (max-width: 1280px)" />
             <source src="file.mp4" type="video/mp4" />
             Your browser does not support the video tag. I suggest you upgrade your browser.
@@ -54,16 +57,36 @@ h1
     <div>
         <h2>
             source src="360p.mp4" type="video/mp4" media="screen and (max-width: 1280px)" <br>
-            source src="file.mp4" type="video/mp4" media="screen and (min-width: 1280px)" 
+            source src="file.mp4" type="video/mp4" media="screen and (min-width: 1280px)"
         </h2>
     </div>
-    <div class="video-container" >
-        <video controls muted autoplay loop >
+    <div class="video-container">
+        <video controls muted autoplay loop>
             <source src="360p.mp4" type="video/mp4" media="screen and (max-width: 1280px)" />
             <source src="file.mp4" type="video/mp4" media="screen and (min-width: 1280px)" />
             Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
     </div>
+
+
+
+    <script>
+
+
+        function windowSize() {
+            // Methode 1
+            var f = window,
+            d = document,
+            e = d.documentElement,
+            g = d.getElementsByTagName('body')[0],
+            x = f.innerWidth || e.clientWidth || g.clientWidth,
+            y = f.innerHeight || e.clientHeight || g.clientHeight;
+            // Methode 2
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+            document.getElementById("demo").innerHTML = "Methode 2: " + w + " x " + h + "<br>Methode 1: " + x+" x "+ y;
+        }
+    </script>
 </body>
 
 </html>
