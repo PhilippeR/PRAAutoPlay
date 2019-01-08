@@ -10,6 +10,24 @@
 {
     text-align: left;
 }
+
+/* Paragraphes en bleu par défaut */
+h1
+{
+    color: blue;
+}
+
+/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
+@media screen and (max-width: 1280px)
+{
+h1
+    {
+        color: red; 
+        background-color: black;
+        font-size: 1.2em;
+    }
+}
+
 </style>
 <title>MP4_and_native_video_tag</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,17 +38,32 @@
         <h1>Test medias queries </h1>
     </div>
     <div>
-        <h1></h1>
+        <h1>
+            source src="360p.mp4" type="video/mp4" media="screen and (max-width: 1280px)" <br>
+            source src="file.mp4" type="video/mp4" media="screen and (min-width: 1280px)" 
+
+        </h1>
     </div>
     <div class="video-container" >
-        <video controls muted autoplay loop height="268" >
-            <source src="file.mp4" type="video/mp4" media="screen and (max-width: 1280px)"" />
-            <source src="desktop.mp4" type="video/mp4" />
+        <video controls muted autoplay loop >
+            <source src="360p.mp4" type="video/mp4" media="screen and (max-width: 1280px)" />
+            <source src="file.mp4" type="video/mp4" />
             Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
     </div>
-    
-
+    <div>
+        <h2>
+            source src="360p.mp4" type="video/mp4" media="screen and (max-width: 1280px)" <br>
+            source src="file.mp4" type="video/mp4" media="screen and (min-width: 1280px)" 
+        </h2>
+    </div>
+    <div class="video-container" >
+        <video controls muted autoplay loop >
+            <source src="360p.mp4" type="video/mp4" media="screen and (max-width: 1280px)" />
+            <source src="file.mp4" type="video/mp4" media="screen and (min-width: 1280px)" />
+            Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+    </div>
 </body>
 
 </html>
